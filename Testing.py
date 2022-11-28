@@ -1,4 +1,9 @@
-predictions = model.predict(test_images)
+import training as t
+import numpy as np
+import matplotlib as plt
+AI = t.model()
+
+predictions = AI.model.predict(test_images)
 COLOR = 'white'
 plt.rcParams['text.color'] = COLOR
 plt.rcParams['axes.labelcolor'] = COLOR
