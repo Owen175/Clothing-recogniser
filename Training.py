@@ -24,7 +24,7 @@ class model():
 
 
     #Passes through the layers sequentially
-    eslf.model = keras.Sequential([
+    self.model = keras.Sequential([
         keras.layers.Flatten(input_shape=(28, 28)),  # input layer (1): This flattens the 2d array to a 1d array
         keras.layers.Dense(128, activation='relu'),  # hidden layer (2): all the neurones in previous layer connect to all in this layer - dense
         keras.layers.Dense(10, activation='softmax') # output layer (3)
